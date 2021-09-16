@@ -19,9 +19,49 @@
     
 
     <!--Construindo o formulário requerido no exercício-->
- 
 
-    <p><b>CONTATO</b></p>
+    <main>
+      <h1>Mande uma mensagem</h1>
+
+      <form method="POST">
+        <ul>
+          <li>
+            <label for="nome">Nome</label>
+            <input name="nome" id="nome">
+          </li>
+          <li>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email">
+          </li>
+          <li>
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" id="telefone"> (11) 9 9999-9999<br>
+          </li>
+          <li>
+            <label for="assunto">Assunto</label>
+            <select name="assunto">
+              <option value="selecione">--Selecione--</option>
+              <option value="reclamacao">Reclamação</option>
+              <option value="sugestao">Sugestão</option>
+            </select>
+          </li>
+          <li>
+            <label for="mensagem">Mensagem<br></label>
+            <textarea></textarea><br>
+          </li>
+          <li>
+            <fieldset>
+              <legend>Opções de Resposta</legend>
+              <input type="checkbox" name="resposta" value="email">E-mail<br>
+              <input type="checkbox" name="resposta" value="telefone">Telefone<br>
+            </fieldset>            
+          </li>
+          <li>
+            <button type="submit">Enviar</button>
+          </li>
+        </ul>
+      </form>
+    </main>
     
     <footer>
       <br><br>
